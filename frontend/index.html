@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finova — Business Feasibility</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="brand">
+            <div class="brand-mark">F</div>
+            <div>
+                <strong>FINOVA</strong>
+                <span>Financial Intelligence</span>
+            </div>
+        </div>
+
+        <div class="nav-status">
+            <span class="status-dot"></span>
+            Engine Online
+        </div>
+    </nav>
+
+    <main class="page">
+
+        <section class="hero">
+            <div>
+                <div class="eyebrow">BUSINESS INTELLIGENCE PLATFORM</div>
+                <h1>Know before<br><span>you invest.</span></h1>
+                <p>
+                    Evaluate financial health, loan feasibility and local
+                    market potential in one place.
+                </p>
+            </div>
+
+            <div class="hero-number">
+                <span>ANALYSIS</span>
+                <strong>01</strong>
+            </div>
+        </section>
+
+        <section class="input-layout">
+
+            <div class="form-card">
+
+                <div class="card-heading">
+                    <div>
+                        <span class="step">01</span>
+                        <h2>Business profile</h2>
+                    </div>
+                    <p>Tell us about the business</p>
+                </div>
+
+                <form id="businessForm">
+
+                    <div class="form-section">
+                        <h3>Basic information</h3>
+
+                        <div class="fields">
+
+                            <div class="field">
+                                <label for="category">Business category</label>
+                                <select id="category" required>
+                                    <option value="">Select category</option>
+                                    <option value="dairy">Dairy</option>
+                                    <option value="agriculture">Agriculture</option>
+                                    <option value="retail">Retail</option>
+                                    <option value="manufacturing">Manufacturing</option>
+                                    <option value="food">Food & Beverage</option>
+                                    <option value="services">Services</option>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label for="village">Business location</label>
+                                <input
+                                    type="text"
+                                    id="village"
+                                    placeholder="e.g. Sekuru"
+                                    required
+                                >
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Financial information</h3>
+
+                        <div class="fields">
+
+                            <div class="field">
+                                <label for="revenue">Monthly revenue</label>
+                                <div class="money-input">
+                                    <span>₹</span>
+                                    <input type="number" id="revenue" placeholder="50,000" required>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label for="investment">Initial investment</label>
+                                <div class="money-input">
+                                    <span>₹</span>
+                                    <input type="number" id="investment" placeholder="1,00,000" required>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label for="cashInflow">Monthly cash inflow</label>
+                                <div class="money-input">
+                                    <span>₹</span>
+                                    <input type="number" id="cashInflow" placeholder="50,000" required>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label for="cashOutflow">Monthly cash outflow</label>
+                                <div class="money-input">
+                                    <span>₹</span>
+                                    <input type="number" id="cashOutflow" placeholder="32,000" required>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Operating costs</h3>
+
+                        <div class="fields">
+
+                            <div class="field">
+                                <label for="rawMaterial">Raw materials</label>
+                                <div class="money-input">
+                                    <span>₹</span>
+                                    <input type="number" id="rawMaterial" placeholder="15,000" required>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label for="labor">Labor</label>
+                                <div class="money-input">
+                                    <span>₹</span>
+                                    <input type="number" id="labor" placeholder="8,000" required>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label for="rent">Rent</label>
+                                <div class="money-input">
+                                    <span>₹</span>
+                                    <input type="number" id="rent" placeholder="5,000" required>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label for="utilities">Utilities</label>
+                                <div class="money-input">
+                                    <span>₹</span>
+                                    <input type="number" id="utilities" placeholder="2,000" required>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label for="other">Other expenses</label>
+                                <div class="money-input">
+                                    <span>₹</span>
+                                    <input type="number" id="other" placeholder="2,000" required>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Pricing & financing</h3>
+
+                        <div class="fields">
+
+                            <div class="field">
+                                <label for="sellingPrice">Selling price / unit</label>
+                                <div class="money-input">
+                                    <span>₹</span>
+                                    <input type="number" id="sellingPrice" placeholder="100" required>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label for="variableCost">Variable cost / unit</label>
+                                <div class="money-input">
+                                    <span>₹</span>
+                                    <input type="number" id="variableCost" placeholder="80" required>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label for="marginCapital">Available margin capital</label>
+                                <div class="money-input">
+                                    <span>₹</span>
+                                    <input type="number" id="marginCapital" placeholder="1,00,000" required>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button type="submit" class="analyze-button">
+                        <span>Analyze feasibility</span>
+                        <span class="arrow">→</span>
+                    </button>
+
+                </form>
+            </div>
+
+            <aside class="side-panel">
+
+                <div class="side-card">
+                    <span class="side-label">WHAT YOU GET</span>
+
+                    <div class="feature">
+                        <div class="feature-icon">₹</div>
+                        <div>
+                            <strong>Financial health</strong>
+                            <p>Profit, margin, cash flow and ROI</p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-icon">↗</div>
+                        <div>
+                            <strong>Loan feasibility</strong>
+                            <p>Eligible loan, EMI and repayment</p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-icon">⌖</div>
+                        <div>
+                            <strong>Market intelligence</strong>
+                            <p>Reach, competition and opportunity</p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-icon">✓</div>
+                        <div>
+                            <strong>Final recommendation</strong>
+                            <p>One clear feasibility assessment</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trust-card">
+                    <span>DECISION SUPPORT</span>
+                    <strong>Data → Analysis → Decision</strong>
+                    <p>
+                        Built to help entrepreneurs understand the numbers
+                        behind a business decision.
+                    </p>
+                </div>
+
+            </aside>
+
+        </section>
+
+        <section id="result" class="results"></section>
+
+    </main>
+
+    <footer>
+        <span>FINOVA</span>
+        <span>Financial Feasibility Engine</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
